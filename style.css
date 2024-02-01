@@ -1,0 +1,70 @@
+body {
+            font-family: Arial, sans-serif;
+			/* background-color: #E09393;*/
+            margin: 0;
+            padding: 0;
+			 /* Gunakan gambar sebagai latar belakang */
+            background-image: url('jamur.jpg'); /* Ganti 'url_gambar_anda.jpg' dengan URL gambar yang ingin Anda gunakan */
+            background-size: auto;
+            background-position: center;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang konten */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Update warna input dan tombol */
+        .container input[type="email"],
+        .container input[type="password"],
+        .container button[type="submit"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            background-color: #FFFFFF; /* Warna latar kotak isian */
+        }
+
+        .container input[type="email"]:focus,
+        .container input[type="password"]:focus,
+        .container button[type="submit"]:hover {
+            background-color: #C6C6C6; /* Warna latar kotak isian saat di-focus atau tombol di-hover */
+        }
+
+        .container button[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+
+        .container button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .container p {
+            text-align: center;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+        }
